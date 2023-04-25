@@ -1,6 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, render_template, request, make_response
 import mysql.connector as db
-import os as os
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+import random
+from datetime import datetime, timedelta
 
 app = Flask(__name__)
 
